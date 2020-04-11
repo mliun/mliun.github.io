@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+    
+    
+<link rel="stylesheet" href="css/mdui.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/iconfont.css">
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            字符串 | 明留的博客
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">明留的博客</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">Overview</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">About</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-2">
+        <div class="mdui-list">
+            
+                
+                <a href="https://mliun.github.io/" target="_blank" rel="noopener" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Home</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Tags</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Categories</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Archives</div>
+                </a>
+            
+                
+                <a href="/categories/图集/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-gallery"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Gallery</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">Night Mode</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-2">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">mliun</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:1049060855@qq.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a href="https://your.url" target="_blank" rel="noopener" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Links</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a href="https://garybear.cn/hexo-theme-meadow/" target="_blank" rel="noopener" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="2020/04/10/字符串/">字符串</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      Posted on:&nbsp;2020-04-10
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      Edited on:&nbsp;2020-04-11
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      In:&nbsp;<a class="category-link" href="categories/python基础/">python基础</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        Views:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=字符串&url=2020/04/10/字符串/&pic=localhost:5555null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">Share to Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=字符串&url=2020/04/10/字符串/&via=mliun" target="_blank" class="mdui-ripple">Share to Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=2020/04/10/字符串/" target="_blank" class="mdui-ripple">Share to Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=2020/04/10/字符串/" target="_blank" class="mdui-ripple">Share to Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=2020/04/10/字符串/&title=字符串" target="_blank" class="mdui-ripple">Share to LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=明留的博客&title=字符串&summary=&pics=localhost:5555null&url=2020/04/10/字符串/" target="_blank" class="mdui-ripple">Share to QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=2020/04/10/字符串/&text=字符串" target="_blank" class="mdui-ripple">Share to Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = tags/数据类型/ >数据类型</a>
+      </i>
+    
+  </div>
+
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h2 id="1-字符串的创建"><a href="#1-字符串的创建" class="headerlink" title="1 字符串的创建"></a>1 字符串的创建</h2><p>​    字符串(String)是 Python 中最常用的数据类型。我们可以使用引号(‘和”在python中没有区别)来创建字符串。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'Hello World'</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-字符串的查找"><a href="#2-字符串的查找" class="headerlink" title="2 字符串的查找"></a>2 字符串的查找</h2><p>1、index(str)</p>
+<p>​    查找str字符串在原字符串中所处的位置（第一个字符所在的索引，如果找不到，就会报错。</p>
+<p>2、find(str)</p>
+<p>​    功能与index()相同，但是要是找不到目标字符串，不会报错而是返回-1。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'scabigc'</span></span><br><span class="line">print(str1.find(<span class="string">'ab'</span>))</span><br><span class="line">print(str1.index(<span class="string">'ab'</span>))</span><br><span class="line">print(str1.find(<span class="string">'z'</span>))</span><br><span class="line">print(str1.index(<span class="string">'z'</span>))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">2</span><br><span class="line">-1</span><br><span class="line">ValueError: substring not found</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-字符串的修改"><a href="#3-字符串的修改" class="headerlink" title="3 字符串的修改"></a>3 字符串的修改</h2><p>replace(str1,str2,max)</p>
+<p>1、功能：把字符串中的str1用str2替换。max可不指定，若max指定，那么替换次数不能超过max次。</p>
+<p>2、从底层可以看出，replace有返回值，并不会在原数据上进行修改。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Signature: str1.replace(old, new, count&#x3D;-1, &#x2F;)</span><br><span class="line">Docstring:</span><br><span class="line">Return a copy with all occurrences of substring old replaced by new.</span><br></pre></td></tr></table></figure>
+
+<p>3、字符串修改时，字符串长度不需要相等。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'scabigc'</span></span><br><span class="line">print(str1.replace(<span class="string">'ab'</span>,<span class="string">'guig'</span>))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scguigigc</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-字符串的连接"><a href="#4-字符串的连接" class="headerlink" title="4 字符串的连接"></a>4 字符串的连接</h2><p>1、直接使用+连接</p>
+<p>2、使用.format()方法连接，在需要连接处留下{}</p>
+<table>
+<thead>
+<tr>
+<th>{:&gt;n}</th>
+<th>字符串设定为n，右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>{:&lt;n}</td>
+<td>字符串设定为n，左对齐</td>
+</tr>
+<tr>
+<td>{^n}</td>
+<td>居中</td>
+</tr>
+<tr>
+<td>{.2f}</td>
+<td>保留2位有效数字</td>
+</tr>
+</tbody></table>
+<p>3、格式化字符串</p>
+<table>
+<thead>
+<tr>
+<th>%s</th>
+<th>格式化字符串</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%d</td>
+<td>格式化整数</td>
+</tr>
+<tr>
+<td>%u</td>
+<td>格式化无符号整型</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>格式化无符号八进制数</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>格式化无符号十六进制数</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>格式化无符号十六进制数（大写）</td>
+</tr>
+<tr>
+<td>%e</td>
+<td>用科学计数法格式化浮点数</td>
+</tr>
+<tr>
+<td>%p</td>
+<td>用十六进制数格式化变量的地址</td>
+</tr>
+</tbody></table>
+<p>4、使用join方法</p>
+<p>​    join前是使用什么连接，join的参数填一个可迭代对象，会将遍历出的元素进行连接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Signature: str1.join(iterable, &#x2F;)</span><br><span class="line">Docstring:</span><br><span class="line">Concatenate any number of strings.</span><br><span class="line"></span><br><span class="line">The string whose method is called is inserted in between each given string.</span><br><span class="line">The result is returned as a new string.</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'scabigc'</span></span><br><span class="line">str2 = <span class="string">'abc'</span></span><br><span class="line">print(str1 + str2)</span><br><span class="line">print(<span class="string">'数字是&#123;&#125;'</span>.format(<span class="number">12</span>))</span><br><span class="line">print(<span class="string">'数字是%d'</span>,<span class="number">2</span>)</span><br><span class="line">print(<span class="string">'.'</span>.join(<span class="string">'casfad'</span>))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">scabigcabc</span><br><span class="line">数字是12</span><br><span class="line">数字是%d 2</span><br><span class="line">c.a.s.f.a.d</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-字符串的判断"><a href="#5-字符串的判断" class="headerlink" title="5 字符串的判断"></a>5 字符串的判断</h2><table>
+<thead>
+<tr>
+<th>isdigit()</th>
+<th>是否全由数字组成</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>isalpha()</td>
+<td>是否全由字母组成(包括中文)</td>
+</tr>
+<tr>
+<td>isalnum()</td>
+<td>是否全游数字和字母组成</td>
+</tr>
+<tr>
+<td>isinstance(date,数据类型)</td>
+<td>数据是否符合数据类型</td>
+</tr>
+</tbody></table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'213'</span></span><br><span class="line">str2 = <span class="string">'dadwa'</span></span><br><span class="line">str3 = <span class="string">'dadwa12'</span></span><br><span class="line">print(str1.isdigit())</span><br><span class="line">print(str1.isalpha())</span><br><span class="line">print(str1.isalnum())</span><br><span class="line">print(isinstance(str1,int))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">True</span><br><span class="line">False</span><br><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-字符串的分隔"><a href="#6-字符串的分隔" class="headerlink" title="6 字符串的分隔"></a>6 字符串的分隔</h2><p>str1.split(str2)</p>
+<p>​    将str1根据str2来分割成多个文本，将文本用列表打包再返回。常用于按照标点符号来对文本进行分割。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'sdasad'</span>.split(<span class="string">'as'</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;sd&#39;, &#39;ad&#39;]</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-其他方法"><a href="#7-其他方法" class="headerlink" title="7 其他方法"></a>7 其他方法</h2><p>① capitalize(str)</p>
+<p>​    首字母大写，其余小写，有返回值不在原函数上修改。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">capitalize</span><span class="params">(self)</span>:</span> <span class="comment"># real signature unknown; restored from __doc__</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    S.capitalize() -&gt; str</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    Return a capitalized version of S, i.e. make the first character</span></span><br><span class="line"><span class="string">    have upper case and the rest lower case.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">""</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">'dasD'</span></span><br><span class="line">print(str1.capitalize())</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dasd</span><br></pre></td></tr></table></figure>
+
+<p>②center(width,fillchar = None)</p>
+<p>​    用来将字符串在这个指定宽度的正中间显示，若有填充字符，填充字符必须是单个字符。有返回值不在原函数上修改。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def center(self, width, fillchar&#x3D;None): # real signature unknown; restored from __doc__</span><br><span class="line">       &quot;&quot;&quot;</span><br><span class="line">       S.center(width[, fillchar]) -&gt; str</span><br><span class="line">       </span><br><span class="line">       Return S centered in a string of length width. Padding is</span><br><span class="line">       done using the specified fill character (default is a space)</span><br><span class="line">       &quot;&quot;&quot;</span><br><span class="line">       return &quot;&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ret1 = str1.center(<span class="number">50</span>,<span class="string">'-'</span>)</span><br><span class="line">ret2 = str1.center(<span class="number">50</span>)</span><br><span class="line">print(ret1)</span><br><span class="line">print(ret2)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-----------------------dasD-----------------------</span><br><span class="line">                       dasD</span><br></pre></td></tr></table></figure>
+
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+      <a rel="prev" class="post-nav-item mdui-float-left" href="2020/04/11/数字/">
+        <i class="iconfont icon-angle-left"></i>
+        <span>数字</span>
+      </a>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="2020/04/10/变量/">
+        <span>变量</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="2020/04/10/字符串/" id="toc-header" class="mdui-ripple">Table of Contents</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-字符串的创建"><span class="toc-number">1.</span> <span class="toc-text">1 字符串的创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-字符串的查找"><span class="toc-number">2.</span> <span class="toc-text">2 字符串的查找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-字符串的修改"><span class="toc-number">3.</span> <span class="toc-text">3 字符串的修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-字符串的连接"><span class="toc-number">4.</span> <span class="toc-text">4 字符串的连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-字符串的判断"><span class="toc-number">5.</span> <span class="toc-text">5 字符串的判断</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-字符串的分隔"><span class="toc-number">6.</span> <span class="toc-text">6 字符串的分隔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-其他方法"><span class="toc-number">7.</span> <span class="toc-text">7 其他方法</span></a></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="http://www.beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2020 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        mliun
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>Total Visitors <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>Total Views <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+<script src="js/mdui.min.js"></script>
+<script src="js/meadow.js"></script>
+
+</body>
+</html >
